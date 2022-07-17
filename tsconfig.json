@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": true,
+    "target": "es6",
+    "sourceMap": true
+  },
+  "compileOnSave": true,
+  "include": ["src"]
+}

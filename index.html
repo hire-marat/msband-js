@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Playground</title>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <script>iband = new msband.BLEv2Interface();</script>
+</head>
+<body>
+    <h1>This is a testbed for the compiled JavaScript file.</h1>
+    <button onclick="Promise.all(iband.acquire());">Acquisition</button>
+    <button onclick="iband.lock_char.addEventListener('characteristicvaluechanged', console.warn);">Add callback</button>
+    <button onclick="Promise.all(iband.lock(true));">Send Lock True</button>
+    <button onclick="Promise.all(iband.lock(false));">Send Lock False</button>
+</body>
+</html>

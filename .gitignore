@@ -1,0 +1,9 @@
+/.idea/
+/dist/
+/node_modules/
+
+*.js
+*.js.map
+
+/package-lock.json
+/pnpm-lock.yaml
